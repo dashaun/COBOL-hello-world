@@ -4,7 +4,7 @@
 
 ``` 
 $ sudo apt install open-cobol
-$ cobc -free -x -o helloworld helloworld.cob
+$ cobc -free -x helloworld.cob
 $ ./helloworld
 Hello world!
 $
