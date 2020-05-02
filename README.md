@@ -4,14 +4,21 @@
 
 ``` 
 $ sudo apt install open-cobol
-$ cobc -free -x helloworld.cob
+$ cobc -free -x main.cob
 $ ./helloworld
 Hello world!
 $
 ```
 
-## On Ubuntu using cobol-buildpack
+## Using pack with cobol-buildpack
 ```
-$ pack set-default-builder cloudfoundry/cnb:cflinuxfs3
 $ pack build cobol-hello-world --path ./ --buildpack dashaun/cobol-buildpack
+```
+
+Now you can run that image:
+
+``` 
+$ docker run -it cobol-hello-world
+Hello world!
+$
 ```
